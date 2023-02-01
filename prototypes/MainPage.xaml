@@ -16,9 +16,9 @@
             <GroupBox Header="Введите пароль">
                 <TextBox Name="TbPasReg"/>
             </GroupBox>
-            <Button Click="Btn_registration">Авторизоваться</Button>
+            <Button Click="Btn_registration" Name ="btnAuto">Авторизоваться</Button>
             <TextBlock  Visibility="Hidden"  Margin="0,30,0,0"  Name ="timeZap" Height="50"></TextBlock>
-            <Button  Visibility="Hidden" Name="timeBut"  Click="btn_newCode">Получить код</Button>
+            <Button   Name="timeBut"  Click="btn_newCode">Получить код</Button>
         </StackPanel>
           </Grid>
 </Page>

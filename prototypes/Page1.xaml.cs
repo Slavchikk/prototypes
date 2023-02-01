@@ -22,12 +22,20 @@ namespace prototypes
     public partial class Page1 : Page
     {
         DispatcherTimer distTimer = new DispatcherTimer();
+        DispatcherTimer distTimer1 = new DispatcherTimer();
         public Page1()
         {
             InitializeComponent();
             distTimer.Interval = new TimeSpan(0, 0, 10);
             distTimer.Start();
             distTimer.Tick += new EventHandler(ClosePage);
+        }
+        public Page1(int two)
+        {
+            InitializeComponent();
+            distTimer1.Interval = new TimeSpan(0, 0, 10);
+            distTimer1.Start();
+            distTimer1.Tick += new EventHandler(ClosePage);
         }
         private void ClosePage(object sender, EventArgs e)
         {
