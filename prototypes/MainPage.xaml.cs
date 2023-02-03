@@ -38,6 +38,7 @@ namespace prototypes
         public MainPage(int a)
         {
             InitializeComponent();
+            
             //if(Frameclass.counterDo == 1)
             //{
             //    timeBut.Visibility = Visibility.Visible;
@@ -53,7 +54,10 @@ namespace prototypes
             timer.Tick += new EventHandler(close_timer1);
             }
         }
-
+        public MainPage(int a,int b)
+        {
+           
+        }
 
 
 
