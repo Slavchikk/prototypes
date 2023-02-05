@@ -14,7 +14,7 @@
                 <TextBox Name="TbLoginReg"/>
             </GroupBox>
             <GroupBox Header="Введите пароль">
-                <TextBox Name="TbPasReg"/>
+                <PasswordBox Name="TbPasReg"/>
             </GroupBox>
             <Button Click="Btn_registration" Name ="btnAuto">Авторизоваться</Button>
             <TextBlock  Visibility="Hidden"  Margin="0,30,0,0"  Name ="timeZap" Height="50"></TextBlock>

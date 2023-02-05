@@ -106,7 +106,7 @@ namespace prototypes
             //Получить случайное число (в диапазоне от 0 до 10)
             int value = rnd.Next(10000, 99999);
             Frameclass.globalInt = value;
-            if (TbLoginReg.Text == "admin" && TbPasReg.Text == "admin")
+            if (TbLoginReg.Text == "admin" && TbPasReg.Password == "admin")
             {
                 if (MessageBox.Show("Код для входа:  " + value,
                      "Код",
@@ -132,7 +132,7 @@ namespace prototypes
             //Получить случайное число (в диапазоне от 0 до 10)
             int value = rnd.Next(10000, 99999);
             Frameclass.globalInt = value;
-            if (TbLoginReg.Text == "admin" && TbPasReg.Text == "admin")
+            if (TbLoginReg.Text == "admin" && TbPasReg.Password == "admin")
             {
                 if (MessageBox.Show("Код для входа:  " + value,
                      "Код",
