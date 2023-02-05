@@ -9,8 +9,10 @@
       Title="Page2">
 
     <Grid>
-     
+        <Canvas Background="AliceBlue" Width="300" Height="300" ClipToBounds="True"  Name="can">
 
+            <TextBox Canvas.Left="70" TextChanged="btnVvod" Canvas.Bottom="20" Width="150" Name="Cod"></TextBox>
+        </Canvas>
 
     </Grid>
 </Page>

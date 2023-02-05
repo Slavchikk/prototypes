@@ -54,10 +54,7 @@ namespace prototypes
             timer.Tick += new EventHandler(close_timer1);
             }
         }
-        public MainPage(int a,int b)
-        {
-           
-        }
+        
 
 
 
@@ -89,7 +86,7 @@ namespace prototypes
             {
                 timeZap.Visibility=Visibility.Hidden;
                 timer.Stop();
-                btnAuto.IsEnabled = true;
+                //btnAuto.IsEnabled = true;
                 timeBut.Visibility=Visibility.Visible;
                 Frameclass.counterDo++;
             }

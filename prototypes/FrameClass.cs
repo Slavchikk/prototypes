@@ -12,5 +12,6 @@ namespace prototypes
         public static Frame MainFrame;
         public static int globalInt;
         public static int counterDo;
+        public static int tryVvod;
     }
 }

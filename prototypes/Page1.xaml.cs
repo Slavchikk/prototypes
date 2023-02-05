@@ -47,24 +47,26 @@ namespace prototypes
         private void Close1Page(object sender, EventArgs e)
         {
             Content = null;
-            Frameclass.MainFrame.Navigate(new MainPage(1,1));
+            Frameclass.MainFrame.Navigate(new Page2());
         }
 
         private void btnReg(object sender, TextChangedEventArgs e)
         {
             int str = TbPasReg.Text.Length;
-            distTimer.Stop();
+            
             if (Convert.ToInt32(TbPasReg.Text) == Frameclass.globalInt)
             {
                 MessageBox.Show("Вы вошли");
             }
             else if (str == 5)
             {
-
+                distTimer.Stop();
+                distTimer1.Stop();
                 MessageBox.Show("код введен неверно!");
                 if(wheren == 1)
                 {
-                    Frameclass.MainFrame.Navigate(new MainPage(1,1));
+                    MessageBox.Show("333");
+                    Frameclass.MainFrame.Navigate(new Page2());
                     Content = null;
                 }
                 else
